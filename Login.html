@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("hi.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30vw;
+            max-width: 400px;
+            min-width: 280px;
+            text-align: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+
+        .login {
+            font-size: 55px;
+            font-family: "luckiest guy", cursive;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            color: blanchedalmond;
+
+        }
+
+        .item {
+            padding-left: 16px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 11.8em;
+            gap: 5px;
+            font-size: 30px;
+            padding-bottom: 17px;
+        }
+
+        .button {
+            size: 20px;
+        }
+
+        .mat {
+            padding-top: 20px;
+            color: antiquewhite;
+            padding-bottom: 10px;
+        }
+
+
+
+
+        @media (max-width: 1024px) {
+            .container {
+                width: 50vw;
+                margin: 100px auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 70vw;
+                margin: 80px auto;
+            }
+
+            .login {
+                font-size: 45px;
+            }
+
+            .item input {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90vw;
+                margin: 60px auto;
+                padding: 20px 10px;
+            }
+
+            .login {
+                font-size: 35px;
+            }
+
+            .item {
+                width: 100%;
+            }
+
+            .item input {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .mat {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">Login</div>
+        <div class="item">
+            <input type="text" placeholder="Username" style="padding: 10px;">
+            <br>
+            <input type="text" placeholder="Password" style="padding: 10px;">
+            <br>
+
+        </div>
+        <button
+            style="border-radius: 10px;text-shadow: 1px;background-color: blueviolet;color: antiquewhite;font-size: 20px;font-family:'luckiest guy';">
+            Submit</button>
+        <div class="mat">Dont't have an account? Contact me</div>
+    </div>
+
+</body>
+
+</html>

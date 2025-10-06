@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #04041c;
+        }
+
+        .navbar {
+            padding: 0 165px;
+            color: antiquewhite;
+            position: sticky;
+            top: 0;
+            right: 50px;
+            z-index: 1;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 40%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            gap: 20px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            gap: 20px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        img {
+            height: 77vh;
+            width: 29vw;
+            border-radius: 20px;
+            border: 3px solid azure;
+        }
+
+        .FOOTER {
+            display: flex;
+            flex-direction: column;
+            color: antiquewhite;
+            padding: 8px 0px 8px 25px;
+            gap: 0px;
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        .mail {
+            color: antiquewhite;
+        }
+
+        @media (max-width: 1024px) {
+
+            .container,
+            .container1,
+            .container2,
+            .container3 {
+                flex-wrap: wrap;
+                margin-left: 0;
+                gap: 15px;
+            }
+
+            img {
+                width: 45vw;
+                height: auto;
+            }
+
+            .sidebar {
+                left: 10px;
+                padding: 15px;
+            }
+
+            .navbar {
+                padding: 0 40px;
+                text-align: center;
+            }
+
+            .navbar li,
+            .navbar ul {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                transform: none;
+                text-align: center;
+                background: none;
+                backdrop-filter: none;
+                padding: 10px;
+            }
+
+            .sidebar ul {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .container,
+            .container1,
+            .container2,
+            .container3 {
+                flex-direction: column;
+                align-items: center;
+                margin: 20px 0;
+                gap: 20px;
+            }
+
+            img {
+                width: 85vw;
+                height: auto;
+            }
+
+            .navbar {
+                padding: 0;
+                font-size: 16px;
+            }
+
+            .FOOTER p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+
+            <li><a href="Home.html" target="_blank">Home</a></li>
+            <li><a href="photos.html" target="_blank">Photo</a></li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <li>
+            <ul style="display: inline; right: -13%;  font-family: 'Luckiest Guy';"><a href="Illustration.html"
+                    target="_blank"> Featured</a></ul>
+            <ul style="display: inline; right: -13%;  font-family: 'Luckiest Guy';"><a href="illustrationwallpaper.html"
+                    target="_blank">Wallpaper</a></ul>
+        </li>
+    </div>
+    <div class="container">
+        <img src="https://plus.unsplash.com/premium_vector-1730728571175-bc17033b489a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8SWY2NUF1Tk9PeFF8fGVufDB8fHx8fA%3D%3D"
+            alt="FEATURED PHOTO1">
+
+        <img src="https://plus.unsplash.com/premium_vector-1736919089631-bde7ea727487?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8SWY2NUF1Tk9PeFF8fGVufDB8fHx8fA%3D%3D"
+            alt="FEATURED PHOTO2">
+
+        <img src="https://plus.unsplash.com/premium_vector-1757338351287-d2eeeb53a7d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8SWY2NUF1Tk9PeFF8fGVufDB8fHx8fA%3D%3D"
+            alt="FEATURED PHOTO3">
+    </div>
+
+    <div class="container1">
+
+        <img src="https://plus.unsplash.com/premium_vector-1757168999130-4de4f62f6d55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO4">
+        <img src="https://plus.unsplash.com/premium_vector-1698192128950-03bde4cddbc4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO5">
+        <img src="https://images.unsplash.com/vector-1759217926739-8e3c58a3530a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO6">
+    </div>
+    <div class="container2">
+
+        <img src="https://plus.unsplash.com/premium_vector-1753284388571-058f95d4f88b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO7">
+        <img src="https://images.unsplash.com/vector-1748299004095-7912fef01c10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO8">
+        <img src="https://plus.unsplash.com/premium_vector-1757573536955-d5f68ef17cab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDk1fElmNjVBdU5PT3hRfHxlbnwwfHx8fHw%3D"
+            alt="FEATURED PHOTO9">
+    </div>
+    <div class="container3">
+        <img src="https://images.unsplash.com/vector-1756134095703-459bd2d1a671?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwNnxJZjY1QXVOT094UXx8ZW58MHx8fHx8"
+            alt="FEATURED PHOTO9">
+
+    </div>
+
+
+    </div>
+    <hr>
+    <footer>
+        <DIV class="FOOTER">
+            <p style="font-size: 30px;">Presented by - SHIVAM TIBREWAL</p> <br><br>
+            <p> ELECTRICAL DEPARTMENT, IIT KHARAGPUR</p><br>
+            <P><a href="mailto:tibrewalshivam05@gmail.com" target="_blank" class="mail">Contact me -
+                    tibrewalshivam05@gmail.com</a>,7879553261</P>
+
+        </DIV>
+    </footer>
+
+</body>
+
+</html>
